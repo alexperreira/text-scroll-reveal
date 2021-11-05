@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+header {
+	height: 200vh;
+}
+
+.container {
+	/* hide fixed overflow contents */
+	clip: rect(0, auto, auto, 0);
+	/* doesn't work if over flow is visible */
+	overflow: hidden;
+	position: absolute;
+	height: 100vh;
+	left: 0;
+	width: 100%;
+	/* safari hack */
+	-webkit-mask-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+}
+
+.container-solid {
+	background: #fff;
+	top: 0;
+}
+
+.title-wrapper {
+	position: fixed;
+	display: block;
+	margin: auto;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.title-wrapper h1 {
+	text-align: center;
+	font-size: 64px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Fraunces', serif;
+	font-weight: 900;
+}
+
+.container-solid .title-wrapper h1 {
+	background: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?&q=85);
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.container-image {
+	background-image: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+	background-size: 100vw auto;
+	background-position: center;
+	background-attachment: fixed;
+
+	top: 100vh;
+}
+
+.container-image .title-wrapper h1 {
+	color: #fff;
+}
+
+section {
+	min-height: 100vh;
+	padding: 2em;
+	margin: auto;
+	max-width: 800px;
+}
+
+section h2 {
+	font-family: 'Fraunces', serif;
+}
+
+section p {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
